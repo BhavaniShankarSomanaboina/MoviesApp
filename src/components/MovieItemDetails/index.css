@@ -1,0 +1,82 @@
+.MoviesContainer {
+  background-color: #131313;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+.aboutMovieContainer {
+  display: flex;
+  background-color: transparent;
+  font-family: 'Roboto';
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.DetailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.TopicHeading {
+  color: #94a3b8;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.TopicsContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.topicName {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.Heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.similarMoviesContainer {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.SimilarMovieItem {
+  margin: 12px;
+}
+.SimilarMovieImg {
+  width: 17vw;
+  height: 30vh;
+  border-radius: 10px;
+  size: cover;
+}
+
+@media screen and (max-width: 500px) {
+  .SimilarMovieImg {
+    width: 25vw;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .SimilarMovieImg {
+    width: 35vw;
+    height: 20vh;
+  }
+}

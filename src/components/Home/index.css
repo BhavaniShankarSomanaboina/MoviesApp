@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.banner-left-part {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.banner-btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.banner-home-container {
+  background-color: #ffffff;
+}
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  .banner-container {
+    background-image: none;
+    background-color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .banner-text {
+    font-size: 20px;
+  }
+}
+.banner-right-part {
+  display: flex;
+  justify-content: flex-end;
+}
+.banner-close-btn {
+  border: none;
+  background: none;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-home-container {
+    margin-bottom: 0px;
+    display: none;
+  }
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 80vh; */
+  height: 100%;
+}
+.root-container {
+  background-color: #131313;
+  min-height: 100vh;
+}
+.home-sizes-container {
+  height: 80vh;
+  max-height: 100vh;
+  padding: 10px;
+  margin: 10px;
+}
+
+.trending-now-heading,
+.originals-heading {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31.27px;
+  padding-left: 30px;
+  color: #ffffff;
+}
+
+.failed-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  padding: 30px;
+  min-height: 100%;
+}
+.failed-image {
+  width: 30px;
+}
+@media screen and (min-width: 768px) {
+  .failed-image {
+    width: 50px;
+  }
+}
+.failed-heading {
+  font-family: Roboto;
+  font-size: 25px;
+  color: #f1f5f9;
+  text-align: center;
+}
+.failed-note {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #e2e8f0;
+  text-align: center;
+}
+.retry-btn {
+  border: none;
+  background-color: #4f46e5;
+  border-radius: 3px;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Roboto;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
