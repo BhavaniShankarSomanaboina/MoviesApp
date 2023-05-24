@@ -1,8 +1,59 @@
 .searchContainer {
   background-color: #131313;
+  min-height: 100vh;
+  max-height: fit-content;
 }
 
 .initialContainer {
   width: 100vw;
   height: 100vh;
+}
+
+.searchedMoviesContainer {
+  list-style-type: none;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 6%;
+  flex-wrap: wrap;
+}
+
+.searched-MovieItem {
+  margin: 15px;
+}
+
+.movieImg {
+  width: 200px;
+  height: 190px;
+  border-radius: 8px;
+  size: cover;
+}
+
+.NoMoviesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25%;
+  margin-top: 8%;
+  font-family: 'Roboto';
+  color: white;
+}
+
+.NoMoviesImg-container {
+  background-image: url('https://res.cloudinary.com/dsg22ck0f/image/upload/v1684835416/IllustrationNo_Movies_edkbxf.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 20vw;
+  height: 35vh;
+  margin-left: 11%;
+}
+.noMoviesHeading {
+  margin-top: 25%;
+  color: #131313;
+}
+
+.noMoviesText {
+  margin-left: 9%;
+  margin-top: 2%;
+  font-size: 20px;
 }

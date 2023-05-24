@@ -138,3 +138,18 @@
     font-size: 8px;
   }
 }
+
+.durationContainer {
+  display: flex;
+  color: white;
+  font-family: 'Roboto';
+  align-items: center;
+}
+.info {
+  margin: 10px;
+}
+.UAinfo {
+  border: 2px solid white;
+  padding: 5px;
+  margin: 10px;
+}

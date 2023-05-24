@@ -1,6 +1,5 @@
 import {Link, withRouter} from 'react-router-dom'
 import {Component} from 'react'
-
 import {HiOutlineSearch} from 'react-icons/hi'
 import {MdMenuOpen} from 'react-icons/md'
 import {ImCross} from 'react-icons/im'
@@ -112,15 +111,11 @@ class Header extends Component {
             <Link to="/search">
               <button
                 type="button"
-                className={showSearchBar ? 'SearchButton' : 'SearchIcon'}
                 testid="searchButton"
+                className={showSearchBar ? 'SearchButton' : 'SearchIcon'}
+                onClick={this.onClickSearchIcon}
               >
-                <HiOutlineSearch
-                  size={20}
-                  color="white"
-                  testid="searchButton"
-                  onClick={this.onClickSearchIcon}
-                />
+                <HiOutlineSearch size={20} color="white" />
               </button>
             </Link>
             <Link to="/account">

@@ -3,7 +3,7 @@ import './index.css'
 
 const Footer = () => (
   <>
-    <div className="footer-container">
+    <div className="footer-container ">
       <button type="button" className="icon-button">
         <FaGoogle />
       </button>

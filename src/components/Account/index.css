@@ -1,0 +1,76 @@
+.AccountContainer {
+  background-color: #131313;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+.userDetailsContainer {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  font-family: 'Roboto';
+  height: 54vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.AccountHeading {
+  color: #131313;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+.MemberInfo {
+  display: flex;
+  margin: 20px;
+}
+.category {
+  font-size: 24px;
+  color: #94a3b8;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.typeDetails {
+  display: flex;
+  margin-left: 20px;
+}
+
+.text {
+  color: #1e293b;
+  font-size: 24px;
+}
+.password {
+  color: #64748b;
+  font-size: 24px;
+}
+
+.UltraText {
+  border: 2px solid #1e293b;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 8px;
+  padding: 2px;
+}
+
+.LogoutBtn {
+  background: #e50914;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  align-self: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-width: 0px;
+}

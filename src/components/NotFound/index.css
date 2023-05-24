@@ -1,0 +1,48 @@
+.bgContainer {
+  background-image: url('https://res.cloudinary.com/dsg22ck0f/image/upload/v1684859443/Movies_App_NotFound_nugdr6.png');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.NotFoundHeading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 125px;
+  color: #ffffff;
+}
+
+.NotFoundPara {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 2%;
+  width: 45vw;
+}
+
+.HomeBtn {
+  margin-top: 40%;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  color: #171f46;
+  border-width: 0;
+  font-size: 16px;
+  font-weight: bold;
+}

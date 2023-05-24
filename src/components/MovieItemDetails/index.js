@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
+import {Link} from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import HomePoster from '../HomePoster'
@@ -127,11 +128,13 @@ class MovieItemDetails extends Component {
         <ul className="similarMoviesContainer">
           {movieDetails.similarMovies.map(eachMovie => (
             <li key={eachMovie.id} className="SimilarMovieItem">
-              <img
-                src={eachMovie.posterPath}
-                alt={eachMovie.title}
-                className="SimilarMovieImg"
-              />
+              <Link to={`/movies/${eachMovie.id}`}>
+                <img
+                  src={eachMovie.posterPath}
+                  alt={eachMovie.title}
+                  className="SimilarMovieImg"
+                />
+              </Link>
             </li>
           ))}
         </ul>

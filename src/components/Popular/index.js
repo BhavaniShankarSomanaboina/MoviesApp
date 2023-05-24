@@ -3,6 +3,7 @@ import Cookies from 'js-cookie'
 import {Link} from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 import Header from '../Header'
+import Footer from '../Footer'
 import './index.css'
 
 const apiStatusConstants = {
@@ -56,22 +57,22 @@ class Popular extends Component {
     return (
       <ul className="moviesList">
         {popularMoviesList.map(eachMovie => (
-          <Link
-            to={`/movies/${eachMovie.id}`}
-            className="movieItemLink"
-            key={eachMovie.id}
-          >
-            <li className="movieItem" key={eachMovie.id}>
+          <li className="movieItem" key={eachMovie.id}>
+            <Link to={`/movies/${eachMovie.id}`} className="movieItemLink">
               <img
                 src={eachMovie.posterPath}
-                alt="movie poster"
+                alt={eachMovie.title}
                 className="movieImg"
               />
-            </li>
-          </Link>
+            </Link>
+          </li>
         ))}
       </ul>
     )
+  }
+
+  onRetry = () => {
+    this.getPopularMoviesApi()
   }
 
   renderFailureView = () => (
@@ -111,7 +112,7 @@ class Popular extends Component {
         return this.renderLoadingView()
 
       default:
-        return null
+        return this.renderLoadingView()
     }
   }
 
@@ -120,6 +121,7 @@ class Popular extends Component {
       <div className="popularContainer">
         <Header />
         {this.popularMoviesListResults()}
+        <Footer />
       </div>
     )
   }
